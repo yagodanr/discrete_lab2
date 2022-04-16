@@ -25,7 +25,7 @@ class Server:
             self.clients.append(c)
 
             # send public key to the client 
-            
+
             # ...
 
             # encrypt the secret with the clients public key
