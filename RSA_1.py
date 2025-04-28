@@ -1,6 +1,6 @@
 import random
-import primes
 
+import primes
 
 # def is_prime(n):
 #     if n <= 1:

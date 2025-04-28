@@ -1,6 +1,7 @@
 import random
-from numba import njit
-from numba import uint64
+
+from numba import njit, uint64
+
 
 @njit
 def is_prime(n: uint64) -> bool:

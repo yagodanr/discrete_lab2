@@ -1,4 +1,6 @@
 import random
+
+
 class RSA:
     def __init__(self):
         keys = self.generate_keys()

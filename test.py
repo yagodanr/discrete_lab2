@@ -1,4 +1,5 @@
 from time import time
+
 from primes import return_prime
 
 

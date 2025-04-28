@@ -1,7 +1,8 @@
 # cython: boundscheck=False, wraparound=False, nonecheck=False
 
-from libc.math cimport sqrt
 from cython cimport long
+from libc.math cimport sqrt
+
 
 cdef inline bint is_prime(unsigned long long n):
     if n <= 1:

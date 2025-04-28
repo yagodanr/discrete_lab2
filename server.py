@@ -1,8 +1,13 @@
-import socket
-import threading
 import hashlib
-import random
-from RSA import RSA
+import socket
+import sys
+import threading
+
+from RSA import RSA as r1
+from RSA_1 import RSA as r2
+from RSA_2 import RSA as r3
+
+
 class Server:
     def __init__(self, port: int) -> None:
         self.host = '127.0.0.1'
@@ -63,5 +68,16 @@ class Server:
                 break
 
 if __name__ == "__main__":
+
+    if len(sys.argv):
+        match sys.argv[1]:
+            case "v":
+                RSA = r1
+            case "cython":
+                RSA = r2
+            case "numba":
+                RSA = r3
+    else:
+        RSA = r1
     s = Server(9001)
     s.start()

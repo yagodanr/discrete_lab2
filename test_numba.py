@@ -1,6 +1,7 @@
 from time import time
-from numba import njit, prange
-from numba import uint64
+
+from numba import njit, prange, uint64
+
 
 @njit
 def is_prime(n: uint64) -> bool:

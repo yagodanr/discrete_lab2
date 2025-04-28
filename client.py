@@ -1,8 +1,10 @@
-import socket
-import threading
 import hashlib
 import random
+import socket
+import threading
+
 from RSA import RSA
+
 
 class Client:
     def __init__(self, server_ip: str, port: int, username: str) -> None:
